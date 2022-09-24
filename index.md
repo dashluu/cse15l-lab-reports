@@ -14,4 +14,6 @@ Example of a code block in Python: <br>
   def main():
     print('Hello World!')
 ```
+Link to the lab report:<br>
+[Lab Report 1](lab-report-1-week-0.html)
 ---
