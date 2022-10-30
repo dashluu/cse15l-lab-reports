@@ -32,7 +32,7 @@ find ./technical -name "chapter-[0-9].*"
 ./technical/911report/chapter-8.txt
 ./technical/911report/chapter-9.txt
 ```
-In the last example, `find -name` looks for files that start with `chapter-` followed by one numeric value (0 to 9) with a wildcard extension.
+In this example, `find -name` looks for files that start with `chapter-` followed by one numeric value (0 to 9) with a wildcard extension.
 # Find -size
 ## Usage
 * `find -size (+/-)n` finds files whose sizes are less than, equal, or larger than `n`.
@@ -143,4 +143,4 @@ In example 2, `find -mtime +2` finds all the files that have been modified more 
 > find ./technical -mmin 1
 ./technical/government/Media/A_helping_hand.txt
 ```
-In example 2, `find -mtime 1` finds all the files that have been modified exactly 1 minute ago.
+In example 3, `find -mtime 1` finds all the files that have been modified exactly 1 minute ago.
