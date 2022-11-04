@@ -114,14 +114,14 @@ In this example, `find -size` returns all files with 50 kibibytes of space, roun
 ## Examples
 ### Example 1
 ```
-> find ./technical -mtime -1
+> find ./technical -mmin -1
 ./technical
 ./technical/government/Media/5_Legal_Groups.txt
 ```
-In example 1, `find -mtime -1` finds all the files that have been modified within the last 1 minute.
+In example 1, `find -mmin -1` finds all the files that have been modified within the last 1 minute.
 ### Example 2
 ```
-> find ./technical -mtime +2
+> find ./technical -mmin +2
 ./technical/911report
 ./technical/911report/chapter-1.txt
 ./technical/911report/chapter-10.txt
@@ -137,10 +137,10 @@ In example 1, `find -mtime -1` finds all the files that have been modified withi
 ./technical/911report/chapter-5.txt
 ...
 ```
-In example 2, `find -mtime +2` finds all the files that have been modified more than 2 minutes ago.
+In example 2, `find -mmin +2` finds all the files that have been modified more than 2 minutes ago.
 ### Example 3
 ```
 > find ./technical -mmin 1
 ./technical/government/Media/A_helping_hand.txt
 ```
-In example 3, `find -mtime 1` finds all the files that have been modified exactly 1 minute ago.
+In example 3, `find -mmin 1` finds all the files that have been modified exactly 1 minute ago.
