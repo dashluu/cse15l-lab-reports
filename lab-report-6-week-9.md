@@ -1,4 +1,4 @@
-# Week 7 Lab Report
+# Week 9 Lab Report
 **Author**: Trung Dat Luu.<br>
 ## Part 1 - grade.sh code and screenshots
 ### Part 1.1 - grade.sh
