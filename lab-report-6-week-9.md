@@ -66,9 +66,17 @@ echo "Copying file to the grading directory..."
 ```
 The next line prints out a message indicating that the graded file is being copied. The output for the standard error is empty and the output for the standard output in this case is `Copying file to the grading directory...` and the exit code is still 0.
 ```
-if [[ $? -ne 0 ]]; then
-	echo "Compiler error. Grade: 0/100"
-	exit 2
+set +e
+```
+The next command says that if there are any errors, keep executing. The output for both the standard output and the standard error is empty and the exit code is 0.
+```
+cp $FILE .
+```
+This command is used to copy the file to be tested to the current directory. Since there are no errors during the execution, the exit code is 0 and the content of both the standard output and standard error is empty.
+```
+if [ ! -f "$FILE" ]; then
+	echo "File does not exist. Grade 0/100"
+	exit 1
 fi
 ```
 The if statement is used to check whether the file exists. Since it does, the if condition is false and the two commands inside the body are not executed so the output for the standard output and standard error is empty and the exit code is 0.
